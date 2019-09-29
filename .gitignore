@@ -1,4 +1,14 @@
+# Build directories
+lib
+bin
+build
+
+# Emscripten build directories
+emscripten/lib
+emscripten/bin
+emscripten/build
+
+# Visual Studio CMake directories + files
 .vs
 out
-build
 CMakeSettings.json
