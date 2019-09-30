@@ -1,3 +1,3 @@
-add_library(${BlackBoxLibraryName}
+add_library(${BlackboxLibraryName}
     test.cpp
 )

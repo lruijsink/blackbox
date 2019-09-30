@@ -3,11 +3,11 @@ cmake_minimum_required (VERSION 3.8)
 if(EMSCRIPTEN)
 	set(CMAKE_CXX_FLAGS "-O3 --bind")
 
-	set(BlackBoxWebAssemblyName ${BlackBoxProjectName}_wasm)
-	project(${BlackBoxWebAssemblyName})
+	set(BlackboxWebAssemblyName ${BlackboxProjectName})
+	project(${BlackboxWebAssemblyName})
 
-	add_executable(BlackBoxWebAssemblyName
+	add_executable(${BlackboxWebAssemblyName}
 		bind.cpp
 	)
-	target_link_libraries(BlackBoxWebAssemblyName ${BlackBoxLibraryName})
+	target_link_libraries(${BlackboxWebAssemblyName} ${BlackboxLibraryName})
 endif()
